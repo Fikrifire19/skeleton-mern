@@ -2,13 +2,13 @@
   "name": "skeleton-mern",
   "version": "1.0.0",
   "description": "membuat skeleton untuk aplikasi mern",
-  "main": "index.js",
+  "main": "./dist/server.generated.js",
   "scripts": {
     "development": "nodemon"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Fikrifire19/skeleton-mern.git"
+    "url": "https://github.com/Fikrifire19/skeleton-mern.git"
   },
   "keywords": [
     "nodejs.",
@@ -25,12 +25,23 @@
   "homepage": "https://github.com/Fikrifire19/skeleton-mern#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "nodemon": "^2.0.4",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-middleware": "^2.25.0",
     "webpack-node-externals": "^2.5.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.1.1",
+    "mongoose": "^5.10.6"
   }
 }
